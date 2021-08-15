@@ -1,0 +1,11 @@
+/* 
+  Localizables.strings
+  LibraryChallengeWX
+
+  Created by Dardo Matias Mansilla on 15/08/2021.
+  
+*/
+
+//Login
+
+"login_title" = "Login";

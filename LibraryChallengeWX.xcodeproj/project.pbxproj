@@ -28,6 +28,10 @@
 		4109CA4526C987EF00A44399 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109CA4226C987EF00A44399 /* User.swift */; };
 		4109CA4626C987EF00A44399 /* Coment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109CA4326C987EF00A44399 /* Coment.swift */; };
 		4109CA4726C987EF00A44399 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109CA4426C987EF00A44399 /* Book.swift */; };
+		4109CA4B26C9AE5500A44399 /* LibraryChallengeWXConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109CA4A26C9AE5500A44399 /* LibraryChallengeWXConstant.swift */; };
+		4109CA4F26C9B26500A44399 /* Localizables.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4109CA4E26C9B26500A44399 /* Localizables.strings */; };
+		41222B9F26C9B36F00AEFA4F /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41222B9E26C9B36F00AEFA4F /* String+Localized.swift */; };
+		41222BA326C9B3BE00AEFA4F /* LibraryChallengeWXLocalizables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41222BA226C9B3BE00AEFA4F /* LibraryChallengeWXLocalizables.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +57,10 @@
 		4109CA4226C987EF00A44399 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4109CA4326C987EF00A44399 /* Coment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coment.swift; sourceTree = "<group>"; };
 		4109CA4426C987EF00A44399 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		4109CA4A26C9AE5500A44399 /* LibraryChallengeWXConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryChallengeWXConstant.swift; sourceTree = "<group>"; };
+		4109CA4E26C9B26500A44399 /* Localizables.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizables.strings; sourceTree = "<group>"; };
+		41222B9E26C9B36F00AEFA4F /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		41222BA226C9B3BE00AEFA4F /* LibraryChallengeWXLocalizables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryChallengeWXLocalizables.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,7 @@
 		4109C9FA26C9852C00A44399 /* LibraryChallengeWX */ = {
 			isa = PBXGroup;
 			children = (
+				4109CA4926C9AE3300A44399 /* Constant */,
 				4109CA4126C987EF00A44399 /* Model */,
 				4109CA2A26C9879700A44399 /* Networking */,
 				4109CA1526C9862200A44399 /* Login */,
@@ -110,6 +119,7 @@
 		4109CA1326C985EF00A44399 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4109CA4D26C9B16300A44399 /* Localizables */,
 				4109CA0426C9853700A44399 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -118,6 +128,7 @@
 		4109CA1426C985F500A44399 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				41222B9E26C9B36F00AEFA4F /* String+Localized.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -207,6 +218,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		4109CA4926C9AE3300A44399 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				4109CA4A26C9AE5500A44399 /* LibraryChallengeWXConstant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		4109CA4D26C9B16300A44399 /* Localizables */ = {
+			isa = PBXGroup;
+			children = (
+				41222BA226C9B3BE00AEFA4F /* LibraryChallengeWXLocalizables.swift */,
+				4109CA4E26C9B26500A44399 /* Localizables.strings */,
+			);
+			path = Localizables;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -271,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4109CA2726C9866E00A44399 /* LoginViewController.storyboard in Resources */,
+				4109CA4F26C9B26500A44399 /* Localizables.strings in Resources */,
 				4109CA0826C9853700A44399 /* LaunchScreen.storyboard in Resources */,
 				4109CA0526C9853700A44399 /* Assets.xcassets in Resources */,
 			);
@@ -285,6 +314,7 @@
 			files = (
 				4109CA3A26C9879700A44399 /* Endpoint.swift in Sources */,
 				4109CA1E26C9864D00A44399 /* LoginPresenter.swift in Sources */,
+				4109CA4B26C9AE5500A44399 /* LibraryChallengeWXConstant.swift in Sources */,
 				4109CA1D26C9864D00A44399 /* LoginAPIDataManager.swift in Sources */,
 				4109CA2126C9864D00A44399 /* LoginInteractor.swift in Sources */,
 				4109CA3826C9879700A44399 /* Networking.swift in Sources */,
@@ -294,10 +324,12 @@
 				4109CA4526C987EF00A44399 /* User.swift in Sources */,
 				4109CA1F26C9864D00A44399 /* LoginRouter.swift in Sources */,
 				4109C9FE26C9852C00A44399 /* SceneDelegate.swift in Sources */,
+				41222BA326C9B3BE00AEFA4F /* LibraryChallengeWXLocalizables.swift in Sources */,
 				4109CA2226C9864D00A44399 /* LoginViewController.swift in Sources */,
 				4109CA3926C9879700A44399 /* APIManager.swift in Sources */,
 				4109CA4626C987EF00A44399 /* Coment.swift in Sources */,
 				4109CA2026C9864D00A44399 /* LoginContracts.swift in Sources */,
+				41222B9F26C9B36F00AEFA4F /* String+Localized.swift in Sources */,
 				4109CA2326C9864D00A44399 /* LoginEntity.swift in Sources */,
 				4109CA4726C987EF00A44399 /* Book.swift in Sources */,
 			);

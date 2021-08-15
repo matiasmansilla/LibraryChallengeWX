@@ -10,6 +10,10 @@ import UIKit
 class LoginViewController: UIViewController, LoginViewProtocol {
   // MARK: - Properties
   var presenter: LoginPresenterProtocol?
+  
+    // MARK: - Constants and Localizables
+  let constant: LibraryChallengeWXConstant = LibraryChallengeWXConstant()
+  let localizables: LibraryChallengeWXLocalizables = LibraryChallengeWXLocalizables()
   // MARK: - Initializer
   static func instantiate() -> LoginViewController {
     let storyboard = UIStoryboard(name: "LoginViewController", bundle: .main)
@@ -22,7 +26,15 @@ class LoginViewController: UIViewController, LoginViewProtocol {
     // MARK: - Life Cycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    view.backgroundColor = .blue
+    
   }
   
+  
+  
+  private func setupUI() {
+    
+    self.title = localizables.loginTitle
+    
+    view.backgroundColor = constant.bgMainScreenColor
+  }
 }

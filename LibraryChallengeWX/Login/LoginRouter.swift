@@ -14,9 +14,7 @@ class LoginRouter: LoginRouterProtocol {
     let interactor: LoginInteractorProtocol = LoginInteractor()
     let apiDataManager: LoginAPIDataManagerProtocol = LoginAPIDataManager()
     let navigationController = UINavigationController(rootViewController: view)
-    
-    navigationController.navigationBar.barStyle = .black
-    
+    setupNavigationBar(navigationController)
     guard let window = window as? UIWindow else { return }
     window.rootViewController = navigationController
     ///Connections
@@ -26,6 +24,18 @@ class LoginRouter: LoginRouterProtocol {
     presenter.interactor = interactor
     interactor.presenter = presenter
     interactor.apiDataManager = apiDataManager
+  }
+  
+  private func setupNavigationBar(_ navi: UINavigationController) {
+    let image = UIImage(named: "bc_nav bar")?.resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0), resizingMode: .stretch)
+    navi.navigationBar.shadowImage = UIImage()
+    navi.navigationBar.setBackgroundImage(image, for: .default)
+    
+    navi.navigationBar.barStyle = .black
+    
+    navi.navigationBar.tintColor = .white
+    
+    navi.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
   }
   
   // MARK: - Methods
