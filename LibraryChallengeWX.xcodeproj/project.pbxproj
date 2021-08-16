@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4103758B26CAF0F900C63152 /* BookListAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103758426CAF0F900C63152 /* BookListAPIDataManager.swift */; };
+		4103758C26CAF0F900C63152 /* BookListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103758526CAF0F900C63152 /* BookListPresenter.swift */; };
+		4103758D26CAF0F900C63152 /* BookListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103758626CAF0F900C63152 /* BookListRouter.swift */; };
+		4103758E26CAF0F900C63152 /* BookListContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103758726CAF0F900C63152 /* BookListContracts.swift */; };
+		4103758F26CAF0F900C63152 /* BookListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103758826CAF0F900C63152 /* BookListInteractor.swift */; };
+		4103759026CAF0F900C63152 /* BookListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103758926CAF0F900C63152 /* BookListViewController.swift */; };
+		4103759626CAF1C800C63152 /* BookListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4103759526CAF1C800C63152 /* BookListViewController.storyboard */; };
+		4103759A26CAF88B00C63152 /* UIViewController+LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103759926CAF88B00C63152 /* UIViewController+LoadingOverlay.swift */; };
+		4103759D26CAF8B400C63152 /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103759C26CAF8B400C63152 /* LoadingOverlay.swift */; };
+		410375A026CAF8EA00C63152 /* UIView+AddEmbedded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4103759F26CAF8EA00C63152 /* UIView+AddEmbedded.swift */; };
+		410375AE26CAF9BD00C63152 /* GenericErrorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410375A426CAF9BD00C63152 /* GenericErrorPresenter.swift */; };
+		410375AF26CAF9BD00C63152 /* GenericErrorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410375A626CAF9BD00C63152 /* GenericErrorViewController.storyboard */; };
+		410375B026CAF9BD00C63152 /* GenericErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410375A726CAF9BD00C63152 /* GenericErrorViewController.swift */; };
+		410375B126CAF9BD00C63152 /* GenericErrorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410375A926CAF9BD00C63152 /* GenericErrorProtocols.swift */; };
+		410375B226CAF9BD00C63152 /* GenericErrorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410375AB26CAF9BD00C63152 /* GenericErrorInteractor.swift */; };
+		410375B326CAF9BD00C63152 /* GenericErrorRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410375AD26CAF9BD00C63152 /* GenericErrorRouter.swift */; };
+		410375B926CB083100C63152 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410375B826CB083100C63152 /* BookViewModel.swift */; };
+		410375C726CB0AAC00C63152 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410375C526CB0AAC00C63152 /* BookCell.swift */; };
+		410375C826CB0AAC00C63152 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 410375C626CB0AAC00C63152 /* BookCell.xib */; };
 		4109C9FC26C9852C00A44399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C9FB26C9852C00A44399 /* AppDelegate.swift */; };
 		4109C9FE26C9852C00A44399 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C9FD26C9852C00A44399 /* SceneDelegate.swift */; };
 		4109CA0526C9853700A44399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4109CA0426C9853700A44399 /* Assets.xcassets */; };
@@ -44,6 +63,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4103758426CAF0F900C63152 /* BookListAPIDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListAPIDataManager.swift; sourceTree = "<group>"; };
+		4103758526CAF0F900C63152 /* BookListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListPresenter.swift; sourceTree = "<group>"; };
+		4103758626CAF0F900C63152 /* BookListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListRouter.swift; sourceTree = "<group>"; };
+		4103758726CAF0F900C63152 /* BookListContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListContracts.swift; sourceTree = "<group>"; };
+		4103758826CAF0F900C63152 /* BookListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListInteractor.swift; sourceTree = "<group>"; };
+		4103758926CAF0F900C63152 /* BookListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewController.swift; sourceTree = "<group>"; };
+		4103759526CAF1C800C63152 /* BookListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookListViewController.storyboard; sourceTree = "<group>"; };
+		4103759926CAF88B00C63152 /* UIViewController+LoadingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+LoadingOverlay.swift"; sourceTree = "<group>"; };
+		4103759C26CAF8B400C63152 /* LoadingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
+		4103759F26CAF8EA00C63152 /* UIView+AddEmbedded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AddEmbedded.swift"; sourceTree = "<group>"; };
+		410375A426CAF9BD00C63152 /* GenericErrorPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericErrorPresenter.swift; sourceTree = "<group>"; };
+		410375A626CAF9BD00C63152 /* GenericErrorViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GenericErrorViewController.storyboard; sourceTree = "<group>"; };
+		410375A726CAF9BD00C63152 /* GenericErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericErrorViewController.swift; sourceTree = "<group>"; };
+		410375A926CAF9BD00C63152 /* GenericErrorProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericErrorProtocols.swift; sourceTree = "<group>"; };
+		410375AB26CAF9BD00C63152 /* GenericErrorInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericErrorInteractor.swift; sourceTree = "<group>"; };
+		410375AD26CAF9BD00C63152 /* GenericErrorRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericErrorRouter.swift; sourceTree = "<group>"; };
+		410375B826CB083100C63152 /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
+		410375C526CB0AAC00C63152 /* BookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		410375C626CB0AAC00C63152 /* BookCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
 		4109C9F826C9852C00A44399 /* LibraryChallengeWX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibraryChallengeWX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4109C9FB26C9852C00A44399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4109C9FD26C9852C00A44399 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +131,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4103758326CAF07700C63152 /* BookList */ = {
+			isa = PBXGroup;
+			children = (
+				4103758726CAF0F900C63152 /* BookListContracts.swift */,
+				4103758426CAF0F900C63152 /* BookListAPIDataManager.swift */,
+				4103758526CAF0F900C63152 /* BookListPresenter.swift */,
+				4103758626CAF0F900C63152 /* BookListRouter.swift */,
+				4103758826CAF0F900C63152 /* BookListInteractor.swift */,
+				4103758926CAF0F900C63152 /* BookListViewController.swift */,
+				4103759526CAF1C800C63152 /* BookListViewController.storyboard */,
+				410375B826CB083100C63152 /* BookViewModel.swift */,
+				410375C426CB0AAC00C63152 /* Cell */,
+			);
+			path = BookList;
+			sourceTree = "<group>";
+		};
+		410375A226CAF9BD00C63152 /* GenericErrorCV */ = {
+			isa = PBXGroup;
+			children = (
+				410375A326CAF9BD00C63152 /* Presenter */,
+				410375A526CAF9BD00C63152 /* View */,
+				410375A826CAF9BD00C63152 /* Protocols */,
+				410375AA26CAF9BD00C63152 /* Interactor */,
+				410375AC26CAF9BD00C63152 /* Router */,
+			);
+			path = GenericErrorCV;
+			sourceTree = "<group>";
+		};
+		410375A326CAF9BD00C63152 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				410375A426CAF9BD00C63152 /* GenericErrorPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		410375A526CAF9BD00C63152 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				410375A626CAF9BD00C63152 /* GenericErrorViewController.storyboard */,
+				410375A726CAF9BD00C63152 /* GenericErrorViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		410375A826CAF9BD00C63152 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				410375A926CAF9BD00C63152 /* GenericErrorProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		410375AA26CAF9BD00C63152 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				410375AB26CAF9BD00C63152 /* GenericErrorInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		410375AC26CAF9BD00C63152 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				410375AD26CAF9BD00C63152 /* GenericErrorRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		410375C426CB0AAC00C63152 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				410375C526CB0AAC00C63152 /* BookCell.swift */,
+				410375C626CB0AAC00C63152 /* BookCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		4109C9EF26C9852C00A44399 = {
 			isa = PBXGroup;
 			children = (
@@ -112,10 +228,12 @@
 		4109C9FA26C9852C00A44399 /* LibraryChallengeWX */ = {
 			isa = PBXGroup;
 			children = (
+				4109CA1526C9862200A44399 /* Login */,
+				4103758326CAF07700C63152 /* BookList */,
+				410375A226CAF9BD00C63152 /* GenericErrorCV */,
 				4109CA4926C9AE3300A44399 /* Constant */,
 				4109CA4126C987EF00A44399 /* Model */,
 				4109CA2A26C9879700A44399 /* Networking */,
-				4109CA1526C9862200A44399 /* Login */,
 				4109CA1326C985EF00A44399 /* Resources */,
 				4109CA1226C9856800A44399 /* Common */,
 				4109CA1426C985F500A44399 /* Utilities */,
@@ -152,6 +270,9 @@
 			children = (
 				41222B9E26C9B36F00AEFA4F /* String+Localized.swift */,
 				41C9710B26CA1A4300A7DB35 /* Codable+toDictionary.swift */,
+				4103759926CAF88B00C63152 /* UIViewController+LoadingOverlay.swift */,
+				4103759C26CAF8B400C63152 /* LoadingOverlay.swift */,
+				4103759F26CAF8EA00C63152 /* UIView+AddEmbedded.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -336,9 +457,12 @@
 			files = (
 				41C9710426C9F8F500A7DB35 /* Montserrat-Regular.ttf in Resources */,
 				41C9710326C9F8F500A7DB35 /* Montserrat-Bold.ttf in Resources */,
+				4103759626CAF1C800C63152 /* BookListViewController.storyboard in Resources */,
+				410375C826CB0AAC00C63152 /* BookCell.xib in Resources */,
 				41C9710526C9F8F500A7DB35 /* montserrat-medium.ttf in Resources */,
 				4109CA2726C9866E00A44399 /* LoginViewController.storyboard in Resources */,
 				41C970E926C9BBEA00A7DB35 /* Localizable.strings in Resources */,
+				410375AF26CAF9BD00C63152 /* GenericErrorViewController.storyboard in Resources */,
 				4109CA0826C9853700A44399 /* LaunchScreen.storyboard in Resources */,
 				4109CA0526C9853700A44399 /* Assets.xcassets in Resources */,
 			);
@@ -354,28 +478,44 @@
 				4109CA3A26C9879700A44399 /* Endpoint.swift in Sources */,
 				4109CA1E26C9864D00A44399 /* LoginPresenter.swift in Sources */,
 				4109CA4B26C9AE5500A44399 /* LibraryChallengeWXConstant.swift in Sources */,
+				4103758F26CAF0F900C63152 /* BookListInteractor.swift in Sources */,
 				4109CA1D26C9864D00A44399 /* LoginAPIDataManager.swift in Sources */,
 				4109CA2126C9864D00A44399 /* LoginInteractor.swift in Sources */,
+				410375B026CAF9BD00C63152 /* GenericErrorViewController.swift in Sources */,
 				41C970F626C9EB0F00A7DB35 /* CheckBoxWX.swift in Sources */,
+				4103759026CAF0F900C63152 /* BookListViewController.swift in Sources */,
+				4103759A26CAF88B00C63152 /* UIViewController+LoadingOverlay.swift in Sources */,
 				4109CA3826C9879700A44399 /* Networking.swift in Sources */,
 				41C9710C26CA1A4300A7DB35 /* Codable+toDictionary.swift in Sources */,
 				4109CA3626C9879700A44399 /* BooksResponse.swift in Sources */,
+				4103758B26CAF0F900C63152 /* BookListAPIDataManager.swift in Sources */,
+				4103758E26CAF0F900C63152 /* BookListContracts.swift in Sources */,
+				410375B226CAF9BD00C63152 /* GenericErrorInteractor.swift in Sources */,
+				4103759D26CAF8B400C63152 /* LoadingOverlay.swift in Sources */,
 				4109CA3726C9879700A44399 /* NetworkEnvironment.swift in Sources */,
 				4109C9FC26C9852C00A44399 /* AppDelegate.swift in Sources */,
 				4109CA4526C987EF00A44399 /* User.swift in Sources */,
 				4109CA1F26C9864D00A44399 /* LoginRouter.swift in Sources */,
+				410375B126CAF9BD00C63152 /* GenericErrorProtocols.swift in Sources */,
 				4109C9FE26C9852C00A44399 /* SceneDelegate.swift in Sources */,
 				41222BA326C9B3BE00AEFA4F /* LibraryChallengeWXLocalizables.swift in Sources */,
 				41C9710926CA15D000A7DB35 /* LoginResponse.swift in Sources */,
 				41C970F126C9D1A000A7DB35 /* ValidableTextField.swift in Sources */,
 				4109CA2226C9864D00A44399 /* LoginViewController.swift in Sources */,
+				4103758D26CAF0F900C63152 /* BookListRouter.swift in Sources */,
 				4109CA3926C9879700A44399 /* APIManager.swift in Sources */,
+				410375B926CB083100C63152 /* BookViewModel.swift in Sources */,
 				4109CA4626C987EF00A44399 /* Coment.swift in Sources */,
 				4109CA2026C9864D00A44399 /* LoginContracts.swift in Sources */,
+				410375A026CAF8EA00C63152 /* UIView+AddEmbedded.swift in Sources */,
+				4103758C26CAF0F900C63152 /* BookListPresenter.swift in Sources */,
+				410375C726CB0AAC00C63152 /* BookCell.swift in Sources */,
 				41222B9F26C9B36F00AEFA4F /* String+Localized.swift in Sources */,
 				4109CA2326C9864D00A44399 /* LoginEntity.swift in Sources */,
 				41C970FD26C9F12A00A7DB35 /* PrimaryButtonWX.swift in Sources */,
+				410375AE26CAF9BD00C63152 /* GenericErrorPresenter.swift in Sources */,
 				4109CA4726C987EF00A44399 /* Book.swift in Sources */,
+				410375B326CAF9BD00C63152 /* GenericErrorRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

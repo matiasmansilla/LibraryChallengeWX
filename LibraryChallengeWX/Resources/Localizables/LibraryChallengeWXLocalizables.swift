@@ -10,6 +10,7 @@ import Foundation
 struct LibraryChallengeWXLocalizables {
   
     // MARK: - Login
+  var genericTitleNetworkError: String { "generic_network_error_title".localString }
   var loginTitle: String { "login_title".localString }
   var loginNamePlaceholder: String { "login_name_placeholder".localString }
   var loginLastNamePlaceholder: String { "login_last_name_placeholder".localString }

@@ -15,4 +15,12 @@ class LoginPresenter: LoginPresenterProtocol {
   func login(with user: User) {
     interactor?.loginAPI(user: user)
   }
+  
+  func setError(title: String?, message: String?) {
+    router?.presentError(from: view, with: title, message: message)
+  }
+  
+  func navigateToBookList() {
+    router?.goToBookList(from: view)
+  }
 }

@@ -68,5 +68,11 @@
 		<string>montserrat-medium.ttf</string>
 		<string>Montserrat-Regular.ttf</string>
 	</array>
+  <key>NSAppTransportSecurity</key>
+  <dict>
+    <!--Include to allow all connections (DANGER)-->
+    <key>NSAllowsArbitraryLoads</key>
+        <true/>
+  </dict>
 </dict>
 </plist>

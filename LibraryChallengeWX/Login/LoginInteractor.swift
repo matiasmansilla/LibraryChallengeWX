@@ -14,11 +14,12 @@ class LoginInteractor: LoginInteractorProtocol {
   var apiDataManager: LoginAPIDataManagerProtocol?
   // MARK: - Methods
   func loginAPI(user: User) {
-    apiDataManager?.login(user: user, completion: { (response, error) in
+    apiDataManager?.login(user: user, completion: { [weak self] (response, error) in
       if let message = response?.message {
         print(message)
+        self?.presenter?.navigateToBookList()
       } else {
-        print(error)
+        self?.presenter?.setError(title: LibraryChallengeWXLocalizables().genericTitleNetworkError, message: error?.errorDescription)
       }
     })
   }

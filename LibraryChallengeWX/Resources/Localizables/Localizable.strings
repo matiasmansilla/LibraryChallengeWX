@@ -6,6 +6,11 @@
   
 */
 
+//Generic Error
+
+"generic_network_error_title" = "Network error";
+
+
 "login_title" = "Login";
 
 "login_name_placeholder" = "Ingrese su nombre";

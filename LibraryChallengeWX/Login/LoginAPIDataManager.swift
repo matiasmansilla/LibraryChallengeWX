@@ -6,7 +6,6 @@
 //
 
 import Alamofire
-import ObjectMapper
 
 class LoginAPIDataManager: LoginAPIDataManagerProtocol {
   

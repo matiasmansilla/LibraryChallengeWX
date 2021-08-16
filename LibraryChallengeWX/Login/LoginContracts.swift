@@ -14,7 +14,8 @@ protocol LoginPresenterProtocol: class {
   var interactor: LoginInteractorProtocol? { get set }
   var router: LoginRouterProtocol? { get set }
   func login(with user: User)
-
+  func setError(title: String?, message: String?)
+  func navigateToBookList()
 }
 // MARK: - View Protocol
 protocol LoginViewProtocol: class {
@@ -30,7 +31,8 @@ protocol LoginInteractorProtocol: class {
 // MARK: - Router Protocol
 protocol LoginRouterProtocol: class {
   func goToLogin(window: AnyObject?)
-
+  func goToBookList(from context: AnyObject?)
+  func presentError(from context: AnyObject?, with title: String?, message: String?)
 }
 // MARK: - API Data Manager Protocol
 protocol LoginAPIDataManagerProtocol: class {

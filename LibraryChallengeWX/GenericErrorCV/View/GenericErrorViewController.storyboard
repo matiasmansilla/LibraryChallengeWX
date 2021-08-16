@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Generic Error View Controller-->
+        <scene sceneID="7Av-Ri-5P9">
+            <objects>
+                <viewController storyboardIdentifier="GenericErrorViewController" id="3DW-ZV-4ZO" customClass="GenericErrorViewController" customModule="LibraryChallengeWX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oaC-Sg-aEP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Aj-kV-jTm" userLabel="touchable">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ni-qm-TuH" userLabel="alert view">
+                                <rect key="frame" x="35" y="343" width="344" height="210"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVc-2h-Jxg">
+                                        <rect key="frame" x="16" y="24" width="56" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="30"/>
+                                        <color key="textColor" name="grayCV"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R6b-L7-8JR" userLabel="citi underscore">
+                                        <rect key="frame" x="16" y="66.5" width="14" height="6"/>
+                                        <color key="backgroundColor" name="lightBlue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="9UO-Bd-kM1"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63n-Yg-UB7">
+                                        <rect key="frame" x="16" y="104.5" width="312" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0T-6n-YAu" userLabel="ok" customClass="PrimaryButtonWX" customModule="LibraryChallengeWX" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="157" width="264" height="33"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Ok"/>
+                                        <connections>
+                                            <action selector="okButtonTapped:" destination="3DW-ZV-4ZO" eventType="touchUpInside" id="enY-j5-7ae"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="backgroundCV"/>
+                                <constraints>
+                                    <constraint firstItem="R6b-L7-8JR" firstAttribute="top" secondItem="AVc-2h-Jxg" secondAttribute="bottom" constant="8" id="22n-z8-dZk"/>
+                                    <constraint firstAttribute="trailing" secondItem="63n-Yg-UB7" secondAttribute="trailing" constant="16" id="2dr-WX-ICr"/>
+                                    <constraint firstAttribute="trailing" secondItem="P0T-6n-YAu" secondAttribute="trailing" constant="40" id="6sJ-kW-HcQ"/>
+                                    <constraint firstItem="R6b-L7-8JR" firstAttribute="leading" secondItem="AVc-2h-Jxg" secondAttribute="leading" id="FTN-VY-mtR"/>
+                                    <constraint firstItem="P0T-6n-YAu" firstAttribute="leading" secondItem="4Ni-qm-TuH" secondAttribute="leading" constant="40" id="Jhb-mo-vji"/>
+                                    <constraint firstItem="63n-Yg-UB7" firstAttribute="top" secondItem="R6b-L7-8JR" secondAttribute="bottom" constant="32" id="OpJ-S9-d3a"/>
+                                    <constraint firstItem="P0T-6n-YAu" firstAttribute="top" secondItem="63n-Yg-UB7" secondAttribute="bottom" constant="32" id="PII-Xi-RmF"/>
+                                    <constraint firstItem="AVc-2h-Jxg" firstAttribute="leading" secondItem="4Ni-qm-TuH" secondAttribute="leading" constant="16" id="ag8-37-Saw"/>
+                                    <constraint firstItem="R6b-L7-8JR" firstAttribute="width" secondItem="AVc-2h-Jxg" secondAttribute="width" multiplier="0.25" id="f2h-xJ-al3"/>
+                                    <constraint firstItem="63n-Yg-UB7" firstAttribute="leading" secondItem="4Ni-qm-TuH" secondAttribute="leading" constant="16" id="gpt-9q-fIs"/>
+                                    <constraint firstAttribute="bottom" secondItem="P0T-6n-YAu" secondAttribute="bottom" constant="20" id="mow-3F-WtV"/>
+                                    <constraint firstItem="AVc-2h-Jxg" firstAttribute="top" secondItem="4Ni-qm-TuH" secondAttribute="top" constant="24" id="yjB-l9-LFo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h66-Me-sxh"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Aj-kV-jTm" firstAttribute="leading" secondItem="h66-Me-sxh" secondAttribute="leading" id="3zb-sD-vLa"/>
+                            <constraint firstItem="h66-Me-sxh" firstAttribute="trailing" secondItem="2Aj-kV-jTm" secondAttribute="trailing" id="BQZ-zi-5wU"/>
+                            <constraint firstItem="h66-Me-sxh" firstAttribute="trailing" secondItem="4Ni-qm-TuH" secondAttribute="trailing" constant="35" id="Eic-mX-C6F"/>
+                            <constraint firstItem="2Aj-kV-jTm" firstAttribute="top" secondItem="h66-Me-sxh" secondAttribute="top" id="O2K-jR-fKf"/>
+                            <constraint firstItem="h66-Me-sxh" firstAttribute="bottom" secondItem="2Aj-kV-jTm" secondAttribute="bottom" id="PuT-AT-SZP"/>
+                            <constraint firstItem="4Ni-qm-TuH" firstAttribute="centerY" secondItem="oaC-Sg-aEP" secondAttribute="centerY" id="fhv-Sy-0d6"/>
+                            <constraint firstItem="4Ni-qm-TuH" firstAttribute="leading" secondItem="h66-Me-sxh" secondAttribute="leading" constant="35" id="v5H-rz-0ss"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="errorMessageLabel" destination="63n-Yg-UB7" id="eYg-kv-HIz"/>
+                        <outlet property="tappableView" destination="2Aj-kV-jTm" id="4Uk-JM-wCc"/>
+                        <outlet property="titleErrorLabel" destination="AVc-2h-Jxg" id="myQ-ro-p52"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rnd-Km-ob9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276.81159420289856" y="169.41964285714286"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="P0T-6n-YAu">
+            <size key="intrinsicContentSize" width="30" height="33"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="backgroundCV">
+            <color red="0.95200002193450928" green="0.94900000095367432" blue="0.93500000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayCV">
+            <color red="0.4440000057220459" green="0.4440000057220459" blue="0.4440000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightBlue">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -112,6 +112,7 @@ class LoginViewController: UIViewController, LoginViewProtocol {
       let ageComponents = calendar.dateComponents([.year], from: birthday, to: now)
       user.age = ageComponents.year
     }
+    showLoadingOverlay()
     presenter?.login(with: user)
   }
   
