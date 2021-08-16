@@ -12,5 +12,7 @@ class LoginPresenter: LoginPresenterProtocol {
   var interactor: LoginInteractorProtocol?
   var router: LoginRouterProtocol?
   // MARK: - Methods
-
+  func login(with user: User) {
+    interactor?.loginAPI(user: user)
+  }
 }

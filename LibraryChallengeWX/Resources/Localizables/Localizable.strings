@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  LibraryChallengeWX
+
+  Created by Dardo Matias Mansilla on 15/08/2021.
+  
+*/
+
+"login_title" = "Login";
+
+"login_name_placeholder" = "Ingrese su nombre";
+"login_last_name_placeholder" = "Ingrese su apellido";
+"login_email_placeholder" = "Ingrese su email";
+"login_birthdate_placeholder" = "Ingrese su fecha de nacimiento";
+
+

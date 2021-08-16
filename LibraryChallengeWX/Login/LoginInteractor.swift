@@ -13,4 +13,13 @@ class LoginInteractor: LoginInteractorProtocol {
   weak var presenter: LoginPresenterProtocol?
   var apiDataManager: LoginAPIDataManagerProtocol?
   // MARK: - Methods
+  func loginAPI(user: User) {
+    apiDataManager?.login(user: user, completion: { (response, error) in
+      if let message = response?.message {
+        print(message)
+      } else {
+        print(error)
+      }
+    })
+  }
 }

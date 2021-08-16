@@ -29,9 +29,18 @@
 		4109CA4626C987EF00A44399 /* Coment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109CA4326C987EF00A44399 /* Coment.swift */; };
 		4109CA4726C987EF00A44399 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109CA4426C987EF00A44399 /* Book.swift */; };
 		4109CA4B26C9AE5500A44399 /* LibraryChallengeWXConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109CA4A26C9AE5500A44399 /* LibraryChallengeWXConstant.swift */; };
-		4109CA4F26C9B26500A44399 /* Localizables.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4109CA4E26C9B26500A44399 /* Localizables.strings */; };
 		41222B9F26C9B36F00AEFA4F /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41222B9E26C9B36F00AEFA4F /* String+Localized.swift */; };
 		41222BA326C9B3BE00AEFA4F /* LibraryChallengeWXLocalizables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41222BA226C9B3BE00AEFA4F /* LibraryChallengeWXLocalizables.swift */; };
+		41C970E926C9BBEA00A7DB35 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41C970E826C9BBEA00A7DB35 /* Localizable.strings */; };
+		41C970EE26C9BF0500A7DB35 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 41C970ED26C9BF0500A7DB35 /* IQKeyboardManagerSwift */; };
+		41C970F126C9D1A000A7DB35 /* ValidableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C970F026C9D1A000A7DB35 /* ValidableTextField.swift */; };
+		41C970F626C9EB0F00A7DB35 /* CheckBoxWX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C970F526C9EB0F00A7DB35 /* CheckBoxWX.swift */; };
+		41C970FD26C9F12A00A7DB35 /* PrimaryButtonWX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C970FC26C9F12900A7DB35 /* PrimaryButtonWX.swift */; };
+		41C9710326C9F8F500A7DB35 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41C9710026C9F8F500A7DB35 /* Montserrat-Bold.ttf */; };
+		41C9710426C9F8F500A7DB35 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41C9710126C9F8F500A7DB35 /* Montserrat-Regular.ttf */; };
+		41C9710526C9F8F500A7DB35 /* montserrat-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41C9710226C9F8F500A7DB35 /* montserrat-medium.ttf */; };
+		41C9710926CA15D000A7DB35 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C9710826CA15D000A7DB35 /* LoginResponse.swift */; };
+		41C9710C26CA1A4300A7DB35 /* Codable+toDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C9710B26CA1A4300A7DB35 /* Codable+toDictionary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,9 +67,17 @@
 		4109CA4326C987EF00A44399 /* Coment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coment.swift; sourceTree = "<group>"; };
 		4109CA4426C987EF00A44399 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		4109CA4A26C9AE5500A44399 /* LibraryChallengeWXConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryChallengeWXConstant.swift; sourceTree = "<group>"; };
-		4109CA4E26C9B26500A44399 /* Localizables.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizables.strings; sourceTree = "<group>"; };
 		41222B9E26C9B36F00AEFA4F /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		41222BA226C9B3BE00AEFA4F /* LibraryChallengeWXLocalizables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryChallengeWXLocalizables.swift; sourceTree = "<group>"; };
+		41C970E826C9BBEA00A7DB35 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		41C970F026C9D1A000A7DB35 /* ValidableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidableTextField.swift; sourceTree = "<group>"; };
+		41C970F526C9EB0F00A7DB35 /* CheckBoxWX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxWX.swift; sourceTree = "<group>"; };
+		41C970FC26C9F12900A7DB35 /* PrimaryButtonWX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonWX.swift; sourceTree = "<group>"; };
+		41C9710026C9F8F500A7DB35 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		41C9710126C9F8F500A7DB35 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		41C9710226C9F8F500A7DB35 /* montserrat-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "montserrat-medium.ttf"; sourceTree = "<group>"; };
+		41C9710826CA15D000A7DB35 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		41C9710B26CA1A4300A7DB35 /* Codable+toDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+toDictionary.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4109CA3E26C987C600A44399 /* Alamofire in Frameworks */,
+				41C970EE26C9BF0500A7DB35 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,9 +116,9 @@
 				4109CA4126C987EF00A44399 /* Model */,
 				4109CA2A26C9879700A44399 /* Networking */,
 				4109CA1526C9862200A44399 /* Login */,
-				4109CA1426C985F500A44399 /* Utilities */,
 				4109CA1326C985EF00A44399 /* Resources */,
 				4109CA1226C9856800A44399 /* Common */,
+				4109CA1426C985F500A44399 /* Utilities */,
 				4109C9FB26C9852C00A44399 /* AppDelegate.swift */,
 				4109C9FD26C9852C00A44399 /* SceneDelegate.swift */,
 				4109CA0626C9853700A44399 /* LaunchScreen.storyboard */,
@@ -112,6 +130,9 @@
 		4109CA1226C9856800A44399 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				41C970F026C9D1A000A7DB35 /* ValidableTextField.swift */,
+				41C970F526C9EB0F00A7DB35 /* CheckBoxWX.swift */,
+				41C970FC26C9F12900A7DB35 /* PrimaryButtonWX.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -119,6 +140,7 @@
 		4109CA1326C985EF00A44399 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				41C970FF26C9F80300A7DB35 /* Font */,
 				4109CA4D26C9B16300A44399 /* Localizables */,
 				4109CA0426C9853700A44399 /* Assets.xcassets */,
 			);
@@ -129,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				41222B9E26C9B36F00AEFA4F /* String+Localized.swift */,
+				41C9710B26CA1A4300A7DB35 /* Codable+toDictionary.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -163,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				4109CA2C26C9879700A44399 /* BooksResponse.swift */,
+				41C9710826CA15D000A7DB35 /* LoginResponse.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -230,9 +254,19 @@
 			isa = PBXGroup;
 			children = (
 				41222BA226C9B3BE00AEFA4F /* LibraryChallengeWXLocalizables.swift */,
-				4109CA4E26C9B26500A44399 /* Localizables.strings */,
+				41C970E826C9BBEA00A7DB35 /* Localizable.strings */,
 			);
 			path = Localizables;
+			sourceTree = "<group>";
+		};
+		41C970FF26C9F80300A7DB35 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				41C9710026C9F8F500A7DB35 /* Montserrat-Bold.ttf */,
+				41C9710226C9F8F500A7DB35 /* montserrat-medium.ttf */,
+				41C9710126C9F8F500A7DB35 /* Montserrat-Regular.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +287,7 @@
 			name = LibraryChallengeWX;
 			packageProductDependencies = (
 				4109CA3D26C987C600A44399 /* Alamofire */,
+				41C970ED26C9BF0500A7DB35 /* IQKeyboardManagerSwift */,
 			);
 			productName = LibraryChallengeWX;
 			productReference = 4109C9F826C9852C00A44399 /* LibraryChallengeWX.app */;
@@ -283,6 +318,7 @@
 			mainGroup = 4109C9EF26C9852C00A44399;
 			packageReferences = (
 				4109CA3C26C987C600A44399 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				41C970EC26C9BF0500A7DB35 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 4109C9F926C9852C00A44399 /* Products */;
 			projectDirPath = "";
@@ -298,8 +334,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41C9710426C9F8F500A7DB35 /* Montserrat-Regular.ttf in Resources */,
+				41C9710326C9F8F500A7DB35 /* Montserrat-Bold.ttf in Resources */,
+				41C9710526C9F8F500A7DB35 /* montserrat-medium.ttf in Resources */,
 				4109CA2726C9866E00A44399 /* LoginViewController.storyboard in Resources */,
-				4109CA4F26C9B26500A44399 /* Localizables.strings in Resources */,
+				41C970E926C9BBEA00A7DB35 /* Localizable.strings in Resources */,
 				4109CA0826C9853700A44399 /* LaunchScreen.storyboard in Resources */,
 				4109CA0526C9853700A44399 /* Assets.xcassets in Resources */,
 			);
@@ -317,7 +356,9 @@
 				4109CA4B26C9AE5500A44399 /* LibraryChallengeWXConstant.swift in Sources */,
 				4109CA1D26C9864D00A44399 /* LoginAPIDataManager.swift in Sources */,
 				4109CA2126C9864D00A44399 /* LoginInteractor.swift in Sources */,
+				41C970F626C9EB0F00A7DB35 /* CheckBoxWX.swift in Sources */,
 				4109CA3826C9879700A44399 /* Networking.swift in Sources */,
+				41C9710C26CA1A4300A7DB35 /* Codable+toDictionary.swift in Sources */,
 				4109CA3626C9879700A44399 /* BooksResponse.swift in Sources */,
 				4109CA3726C9879700A44399 /* NetworkEnvironment.swift in Sources */,
 				4109C9FC26C9852C00A44399 /* AppDelegate.swift in Sources */,
@@ -325,12 +366,15 @@
 				4109CA1F26C9864D00A44399 /* LoginRouter.swift in Sources */,
 				4109C9FE26C9852C00A44399 /* SceneDelegate.swift in Sources */,
 				41222BA326C9B3BE00AEFA4F /* LibraryChallengeWXLocalizables.swift in Sources */,
+				41C9710926CA15D000A7DB35 /* LoginResponse.swift in Sources */,
+				41C970F126C9D1A000A7DB35 /* ValidableTextField.swift in Sources */,
 				4109CA2226C9864D00A44399 /* LoginViewController.swift in Sources */,
 				4109CA3926C9879700A44399 /* APIManager.swift in Sources */,
 				4109CA4626C987EF00A44399 /* Coment.swift in Sources */,
 				4109CA2026C9864D00A44399 /* LoginContracts.swift in Sources */,
 				41222B9F26C9B36F00AEFA4F /* String+Localized.swift in Sources */,
 				4109CA2326C9864D00A44399 /* LoginEntity.swift in Sources */,
+				41C970FD26C9F12A00A7DB35 /* PrimaryButtonWX.swift in Sources */,
 				4109CA4726C987EF00A44399 /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +397,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -414,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -535,6 +581,14 @@
 				minimumVersion = 5.4.3;
 			};
 		};
+		41C970EC26C9BF0500A7DB35 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -542,6 +596,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4109CA3C26C987C600A44399 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		41C970ED26C9BF0500A7DB35 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41C970EC26C9BF0500A7DB35 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

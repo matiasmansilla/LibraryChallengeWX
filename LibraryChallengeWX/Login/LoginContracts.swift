@@ -6,12 +6,14 @@
 //
 
 import UIKit
-import Foundation
+import Alamofire
+
 // MARK: - Presenter Protocol
 protocol LoginPresenterProtocol: class {
   var view: LoginViewProtocol? { get set }
   var interactor: LoginInteractorProtocol? { get set }
   var router: LoginRouterProtocol? { get set }
+  func login(with user: User)
 
 }
 // MARK: - View Protocol
@@ -23,7 +25,7 @@ protocol LoginViewProtocol: class {
 protocol LoginInteractorProtocol: class {
   var presenter: LoginPresenterProtocol? { get set }
   var apiDataManager: LoginAPIDataManagerProtocol? { get set }
-
+  func loginAPI(user: User)
 }
 // MARK: - Router Protocol
 protocol LoginRouterProtocol: class {
@@ -33,6 +35,8 @@ protocol LoginRouterProtocol: class {
 // MARK: - API Data Manager Protocol
 protocol LoginAPIDataManagerProtocol: class {
   var network: NetworkingProtocol { get set }
+  func login(user: User, completion: @escaping (_ response: LoginResponse?, _ error: AFError?) -> Void)
+
 }
 
 

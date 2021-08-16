@@ -11,5 +11,6 @@ struct LibraryChallengeWXConstant {
   
   
   var bgMainScreenColor: UIColor? { UIColor(named: "bg_main_screen") }
+  var lightBlueWX: UIColor? { UIColor(named: "light_blue_wx") }
   
 }

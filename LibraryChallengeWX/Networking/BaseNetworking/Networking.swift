@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 protocol NetworkingProtocol {
-  func execute<T: Decodable>(_ endpoint: Endpoint, completion: @escaping (_ data: T?, _ error: AFError?) -> Void)
+  func execute<T: Decodable>(_ endpoint: Endpoint, parameters: Parameters?, completion: @escaping (_ data: T?, _ error: AFError?) -> Void)
 }
 
 class Networking {
@@ -22,8 +22,8 @@ class Networking {
 }
 
 extension Networking: NetworkingProtocol {
-  func execute<T>(_ endpoint: Endpoint, completion: @escaping (T?, AFError?) -> Void) where T : Decodable {
-    apiManager.getRequest(type: endpoint).validate().responseDecodable(of: T.self) { (dataResponse: AFDataResponse<T>) in
+  func execute<T>(_ endpoint: Endpoint, parameters: Parameters? = nil, completion: @escaping (T?, AFError?) -> Void) where T : Decodable {
+    apiManager.getRequest(type: endpoint, parameters: parameters).validate().responseDecodable(of: T.self) { (dataResponse: AFDataResponse<T>) in
       switch dataResponse.result {
       case .success:
         completion(dataResponse.value, nil)

@@ -28,10 +28,10 @@ class APIManager {
 // MARK: - API MANAGER EXTENSION
 extension APIManager {
   
-  func getRequest(type: Endpoint) -> DataRequest {
+  func getRequest(type: Endpoint, parameters: Parameters?) -> DataRequest {
     return APIManager.sessionManager.request(type.url,
                                              method: type.httpMethod,
-                                             parameters: type.parameters,
+                                             parameters: parameters,
                                              encoding: type.encoding,
                                              headers: type.headers).validate()
   }

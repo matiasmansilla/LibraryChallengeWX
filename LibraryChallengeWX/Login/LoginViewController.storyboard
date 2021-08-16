@@ -15,15 +15,122 @@
                     <view key="view" contentMode="scaleToFill" id="6xR-UP-hDX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gr-pd-uV8">
+                                <rect key="frame" x="20" y="88" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="sPw-A9-snS">
+                                <rect key="frame" x="20" y="158.5" width="374" height="531.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5IR-hF-x1H" customClass="ValidableTextField" customModule="LibraryChallengeWX" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q2T-VT-1jW" customClass="ValidableTextField" customModule="LibraryChallengeWX" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="51.5" width="374" height="50.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jyY-Jv-oSm" customClass="ValidableTextField" customModule="LibraryChallengeWX" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="103" width="374" height="50.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nQX-R2-aSl" customClass="ValidableTextField" customModule="LibraryChallengeWX" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="154.5" width="374" height="50.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="eW3-bG-hNh" userLabel="aux">
+                                        <rect key="frame" x="0.0" y="206" width="374" height="325.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKq-3h-FUk" customClass="CheckBoxWX" customModule="LibraryChallengeWX" customModuleProvider="target">
+                                <rect key="frame" x="20" y="710" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="NMe-jK-VKz"/>
+                                    <constraint firstAttribute="height" constant="30" id="heW-nL-bEV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Agree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWm-FZ-UUQ">
+                                <rect key="frame" x="70" y="715" width="324" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAl-gK-dTQ" customClass="PrimaryButtonWX" customModule="LibraryChallengeWX" customModuleProvider="target">
+                                <rect key="frame" x="173.5" y="798" width="67" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="2xP-T7-Ttc"/>
+                                </constraints>
+                                <state key="normal" title="Continuar"/>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="Z07-Nf-aQl" eventType="touchUpInside" id="eBC-pH-e8s"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Vyi-M6-wHX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0gr-pd-uV8" firstAttribute="top" secondItem="Vyi-M6-wHX" secondAttribute="top" constant="44" id="3Ut-L3-VYN"/>
+                            <constraint firstItem="0gr-pd-uV8" firstAttribute="leading" secondItem="Vyi-M6-wHX" secondAttribute="leading" constant="20" id="7Jm-Lf-rep"/>
+                            <constraint firstItem="Vyi-M6-wHX" firstAttribute="trailing" secondItem="sPw-A9-snS" secondAttribute="trailing" constant="20" id="B9D-N5-BYh"/>
+                            <constraint firstItem="iKq-3h-FUk" firstAttribute="leading" secondItem="Vyi-M6-wHX" secondAttribute="leading" constant="20" id="Fhw-IL-TIa"/>
+                            <constraint firstItem="dWm-FZ-UUQ" firstAttribute="leading" secondItem="iKq-3h-FUk" secondAttribute="trailing" constant="20" id="KDf-uN-L1B"/>
+                            <constraint firstItem="PAl-gK-dTQ" firstAttribute="top" secondItem="iKq-3h-FUk" secondAttribute="bottom" constant="58" id="PsI-54-DJt"/>
+                            <constraint firstItem="sPw-A9-snS" firstAttribute="top" secondItem="0gr-pd-uV8" secondAttribute="bottom" constant="50" id="Reh-8v-juq"/>
+                            <constraint firstItem="PAl-gK-dTQ" firstAttribute="centerX" secondItem="6xR-UP-hDX" secondAttribute="centerX" id="UC8-C3-igX"/>
+                            <constraint firstItem="sPw-A9-snS" firstAttribute="leading" secondItem="Vyi-M6-wHX" secondAttribute="leading" constant="20" id="YkG-Q1-TgS"/>
+                            <constraint firstItem="Vyi-M6-wHX" firstAttribute="trailing" secondItem="0gr-pd-uV8" secondAttribute="trailing" constant="20" id="d9b-Gd-Dt9"/>
+                            <constraint firstItem="Vyi-M6-wHX" firstAttribute="bottom" secondItem="PAl-gK-dTQ" secondAttribute="bottom" constant="20" id="giA-cE-6MA"/>
+                            <constraint firstItem="iKq-3h-FUk" firstAttribute="top" secondItem="sPw-A9-snS" secondAttribute="bottom" constant="20" id="hcG-kE-YMI"/>
+                            <constraint firstItem="dWm-FZ-UUQ" firstAttribute="centerY" secondItem="iKq-3h-FUk" secondAttribute="centerY" id="iZL-5D-Mrx"/>
+                            <constraint firstItem="Vyi-M6-wHX" firstAttribute="trailing" secondItem="dWm-FZ-UUQ" secondAttribute="trailing" constant="20" id="yRE-oV-xVE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="agreeTermsLabel" destination="dWm-FZ-UUQ" id="gdV-wQ-iQE"/>
+                        <outlet property="checkBoxButton" destination="iKq-3h-FUk" id="ct9-Dy-EgP"/>
+                        <outlet property="dateTextField" destination="nQX-R2-aSl" id="DpO-tQ-Wg6"/>
+                        <outlet property="emailtextField" destination="jyY-Jv-oSm" id="45D-BM-4sv"/>
+                        <outlet property="lastNameTextField" destination="Q2T-VT-1jW" id="U4Z-U4-kBE"/>
+                        <outlet property="loginButton" destination="PAl-gK-dTQ" id="Euh-H5-tEX"/>
+                        <outlet property="nameTextField" destination="5IR-hF-x1H" id="n5a-Ol-BSx"/>
+                        <outlet property="welcomeLabel" destination="0gr-pd-uV8" id="oar-IT-sLj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dHF-Jq-GrN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141" y="124"/>
+            <point key="canvasLocation" x="140.57971014492756" y="123.88392857142857"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="5IR-hF-x1H">
+            <size key="intrinsicContentSize" width="50" height="50.5"/>
+        </designable>
+        <designable name="PAl-gK-dTQ">
+            <size key="intrinsicContentSize" width="67" height="30"/>
+        </designable>
+        <designable name="Q2T-VT-1jW">
+            <size key="intrinsicContentSize" width="50" height="50.5"/>
+        </designable>
+        <designable name="iKq-3h-FUk">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="jyY-Jv-oSm">
+            <size key="intrinsicContentSize" width="50" height="50.5"/>
+        </designable>
+        <designable name="nQX-R2-aSl">
+            <size key="intrinsicContentSize" width="50" height="50.5"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

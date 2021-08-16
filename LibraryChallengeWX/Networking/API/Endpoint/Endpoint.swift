@@ -18,7 +18,6 @@ protocol EndPointType {
   var headers: HTTPHeaders? { get }
   var url: URL { get }
   var encoding: ParameterEncoding { get }
-  var parameters: Parameters? { get }
 }
 
 // MARK: - Endpoints
@@ -32,14 +31,6 @@ enum Endpoint {
 
 // MARK: - EndPointType Extension
 extension Endpoint: EndPointType {
-  
-  var parameters: Parameters? {
-    switch self {
-    default:
-      return nil
-    }
-  }
-  
   
   var baseURL: String {
     switch APIManager.networkEnviroment {
