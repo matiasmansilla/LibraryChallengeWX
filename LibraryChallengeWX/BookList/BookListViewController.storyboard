@@ -16,22 +16,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tfJ-Xm-6ys">
-                                <rect key="frame" x="20" y="64" width="374" height="778"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LFr-Xc-kzK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="kAM-lT-dHF">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                        <subviews>
+                                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="ktt-fZ-3oB">
+                                                <rect key="frame" x="0.0" y="0.0" width="356" height="56"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </searchBar>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oW-Fo-BYT">
+                                                <rect key="frame" x="368" y="0.0" width="46" height="56"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="46" id="NzV-8w-ApI"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="searchButtonAction:" destination="D5x-Ql-KmD" eventType="touchUpInside" id="TyO-3c-JMe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xOm-2v-7MJ">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5av-B8-1H2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="tfJ-Xm-6ys" firstAttribute="leading" secondItem="5av-B8-1H2" secondAttribute="leading" constant="20" id="NT4-eT-mWv"/>
-                            <constraint firstItem="5av-B8-1H2" firstAttribute="trailing" secondItem="tfJ-Xm-6ys" secondAttribute="trailing" constant="20" id="TXt-HU-hM0"/>
-                            <constraint firstItem="5av-B8-1H2" firstAttribute="bottom" secondItem="tfJ-Xm-6ys" secondAttribute="bottom" constant="20" id="di7-zY-4u7"/>
-                            <constraint firstItem="tfJ-Xm-6ys" firstAttribute="top" secondItem="5av-B8-1H2" secondAttribute="top" constant="20" id="wCN-QB-7fS"/>
+                            <constraint firstItem="xOm-2v-7MJ" firstAttribute="top" secondItem="LFr-Xc-kzK" secondAttribute="bottom" id="5EX-Xl-4qg"/>
+                            <constraint firstItem="5av-B8-1H2" firstAttribute="trailing" secondItem="xOm-2v-7MJ" secondAttribute="trailing" id="6bP-P9-L8a"/>
+                            <constraint firstItem="xOm-2v-7MJ" firstAttribute="leading" secondItem="5av-B8-1H2" secondAttribute="leading" id="HTP-op-miH"/>
+                            <constraint firstItem="LFr-Xc-kzK" firstAttribute="top" secondItem="5av-B8-1H2" secondAttribute="top" id="PMj-um-LhW"/>
+                            <constraint firstItem="5av-B8-1H2" firstAttribute="bottom" secondItem="xOm-2v-7MJ" secondAttribute="bottom" id="Pos-VU-dp6"/>
+                            <constraint firstItem="5av-B8-1H2" firstAttribute="trailing" secondItem="LFr-Xc-kzK" secondAttribute="trailing" id="htI-zS-tGa"/>
+                            <constraint firstItem="LFr-Xc-kzK" firstAttribute="leading" secondItem="5av-B8-1H2" secondAttribute="leading" id="oS8-Nz-1sd"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="tfJ-Xm-6ys" id="59e-Ug-78F"/>
+                        <outlet property="searchBar" destination="ktt-fZ-3oB" id="NLE-ya-MSP"/>
+                        <outlet property="searchBarStackView" destination="kAM-lT-dHF" id="Mz5-se-dB4"/>
+                        <outlet property="searchButton" destination="kAM-lT-dHF" id="BkQ-PG-gmP"/>
+                        <outlet property="tableView" destination="xOm-2v-7MJ" id="Lmo-Lr-9Kb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0cx-FB-JM6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -8,8 +8,11 @@
 import UIKit
 
 class BookListViewController: UIViewController {
-    // MARK: - Outlets
+  // MARK: - Outlets
   @IBOutlet weak var tableView: UITableView!
+  @IBOutlet weak var searchBar: UISearchBar!
+  @IBOutlet weak var searchBarStackView: UIStackView!
+  @IBOutlet weak var searchButton: UIStackView!
   
   // MARK: - Constants and Localizables
   let constant: LibraryChallengeWXConstant = LibraryChallengeWXConstant()
@@ -17,11 +20,10 @@ class BookListViewController: UIViewController {
   
   // MARK: - Properties
   var presenter: BookListPresenterProtocol?
-  var bookList: [BookViewModel] = [] {
-    didSet {
-      tableView.reloadData()
-    }
-  }
+  
+  var bookList: [BookViewModel] = []
+  var filteredBookList: [BookViewModel] = []
+  
   // MARK: - Initializer
   static func instantiate() -> BookListViewController {
     let storyboard = UIStoryboard(name: "BookListViewController", bundle: .main)
@@ -35,6 +37,7 @@ class BookListViewController: UIViewController {
   // MARK: - Life Cycle
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     showLoadingOverlay()
     presenter?.getBooks()
     setupTableView()
@@ -52,6 +55,13 @@ class BookListViewController: UIViewController {
   }
   
   private func setupUI() {
+    searchBarStackView.isHidden = true
+    searchButton.alpha = 0
+    searchBarStackView.layoutMargins = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+    searchBarStackView.isLayoutMarginsRelativeArrangement = true
+    searchBar.sizeToFit()
+    searchBar.returnKeyType = .search
+    
     self.view.backgroundColor = constant.bgMainScreenColor
     navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     self.title = "Library"
@@ -69,9 +79,34 @@ class BookListViewController: UIViewController {
   }
   
   @objc private func rightBarButtonAction() {
-
+    UIView.animate(withDuration: 0.3) {
+      self.searchBarStackView.isHidden.toggle()
+      self.searchButton.alpha = self.searchButton.isHidden ? 0 : 1
+    }
   }
   @objc private func leftBarButtonAction() {
+  }
+  
+  @IBAction func searchButtonAction(_ sender: Any) {
+      showLoadingOverlay()
+      presenter?.getBooks()
+  }
+  
+  private func search() {
+    filteredBookList = []
+    if let text = searchBar.text, !text.isEmpty {
+      guard let searchedText = searchBar.text else { return }
+      for book in bookList {
+        guard let titlebook = book.book?.title else { return }
+        if titlebook.lowercased().contains(searchedText.lowercased()) {
+          filteredBookList.append(book)
+        }
+      }
+    } else {
+      //when empy search text
+      filteredBookList = bookList
+    }
+    self.tableView.reloadData()
   }
 }
 
@@ -80,24 +115,27 @@ extension BookListViewController: BookListViewProtocol {
   func loadBooks(from list: [BookViewModel]) {
     hideLoadingOverlay()
     bookList = list
+    filteredBookList = list
+    search()
+    tableView.reloadData()
   }
 }
 
-  // MARK: - TableView Datasource and Delegate
+// MARK: - TableView Datasource and Delegate
 extension BookListViewController: UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return bookList.count
+    return filteredBookList.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     if let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? BookCell {
       
-      cell.loadExperience(with: bookList[indexPath.row])
-        return cell
+      cell.loadExperience(with: filteredBookList[indexPath.row])
+      return cell
     } else {
-        return UITableViewCell()
+      return UITableViewCell()
     }
-
+    
   }
   
   

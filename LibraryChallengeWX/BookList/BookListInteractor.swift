@@ -15,6 +15,7 @@ class BookListInteractor: BookListInteractorProtocol {
   var group = DispatchGroup()
   // MARK: - Methods
   func getBookFromAPI() {
+    bookViewModelList = []
     apiDataManager?.getBooks(completion: { [weak self] (books, error) in
       if let books = books {
         self?.getImageFromURL(from: books)
@@ -27,12 +28,10 @@ class BookListInteractor: BookListInteractorProtocol {
     })
   }
   
-  
   private func getImageFromURL(from list: [Book]) {
     for item in list {
       group.enter()
       if let logoURL = item.image, let url = URL(string: logoURL) {
-        print("getting image \(item.title) from url \(item.image)")
         DispatchQueue.main.async {
           if let data = try? Data(contentsOf: url) {
             self.bookViewModelList.append(BookViewModel(book: item, bookImageData: data))
@@ -43,6 +42,7 @@ class BookListInteractor: BookListInteractorProtocol {
           }
         }
       } else {
+        self.bookViewModelList.append(BookViewModel(book: item, bookImageData: nil))
         group.leave()
       }
     }

@@ -60,6 +60,19 @@ class LoginViewController: UIViewController, LoginViewProtocol {
     }
     let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
     self.view.addGestureRecognizer(tapGesture)
+    
+    
+    
+    
+    
+    
+    //  TODO TEMP QUIT QUIT QUIT
+    presenter?.navigateToBookList()
+    
+    
+    
+    
+    
   }
   
   override func viewDidAppear(_ animated: Bool) {
