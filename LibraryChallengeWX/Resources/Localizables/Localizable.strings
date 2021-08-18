@@ -12,10 +12,16 @@
 
 
 "login_title" = "Login";
-
+"login_welcome_message" = "Welcome to Library App";
+"login_agree_message" = "I agree";
+"login_done_button_title" = "Done";
 "login_name_placeholder" = "Ingrese su nombre";
 "login_last_name_placeholder" = "Ingrese su apellido";
 "login_email_placeholder" = "Ingrese su email";
 "login_birthdate_placeholder" = "Ingrese su fecha de nacimiento";
 
+//Book List
+"book_list_title" = "Library";
 
+//Settings
+"settings_title" = "Settings";

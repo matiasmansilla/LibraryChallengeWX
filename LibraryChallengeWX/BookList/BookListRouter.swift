@@ -7,8 +7,8 @@
 import UIKit
 
 class BookListRouter: BookListRouterProtocol {
-  func goToBookList(from context: AnyObject?) {
-    guard let context = context as? UIViewController else { return }
+  
+  func instantiate() -> BookListViewController {
     let view = BookListViewController.instantiate()
     let presenter: BookListPresenterProtocol = BookListPresenter()
     let interactor: BookListInteractorProtocol = BookListInteractor()
@@ -21,6 +21,12 @@ class BookListRouter: BookListRouterProtocol {
     presenter.interactor = interactor
     interactor.presenter = presenter
     interactor.apiDataManager = apiDataManager
+    return view
+  }
+  
+  func goToBookList(from context: AnyObject?) {
+    guard let context = context as? UIViewController else { return }
+    let view = instantiate()
     ///Navigation
     context.navigationController?.setViewControllers([view], animated: true)
   }
@@ -28,6 +34,7 @@ class BookListRouter: BookListRouterProtocol {
   func navigateToBookDetail(with book: Book, from context: AnyObject?) {
     //
   }
+  
   
   func presentError(from context: AnyObject?, title: String?, message: String?) {
     guard let context = context as? UIViewController else { return }

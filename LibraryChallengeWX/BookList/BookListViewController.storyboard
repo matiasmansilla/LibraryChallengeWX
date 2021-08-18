@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,14 +26,19 @@
                                             <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="ktt-fZ-3oB">
                                                 <rect key="frame" x="0.0" y="0.0" width="356" height="56"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <color key="barTintColor" name="light_blue_wx"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                             </searchBar>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oW-Fo-BYT">
                                                 <rect key="frame" x="368" y="0.0" width="46" height="56"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="JL0-U0-GQ0"/>
                                                     <constraint firstAttribute="width" constant="46" id="NzV-8w-ApI"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Search">
+                                                    <color key="titleColor" name="light_blue_wx"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="searchButtonAction:" destination="D5x-Ql-KmD" eventType="touchUpInside" id="TyO-3c-JMe"/>
                                                 </connections>
@@ -73,6 +79,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="light_blue_wx">
+            <color red="0.30199998617172241" green="0.66699999570846558" blue="0.9100000262260437" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

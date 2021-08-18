@@ -18,7 +18,7 @@ class GenericErrorViewController: UIViewController {
   static func instantiate() -> GenericErrorViewController {
     let storyboard = UIStoryboard(name: "GenericErrorViewController", bundle: .main)
     if let viewController = storyboard.instantiateViewController(withIdentifier: "GenericErrorViewController") as? GenericErrorViewController {
-      viewController.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+      viewController.modalPresentationStyle = UIModalPresentationStyle.overFullScreen
       viewController.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
       return viewController
     } else {

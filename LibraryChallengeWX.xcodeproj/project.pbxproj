@@ -26,6 +26,12 @@
 		410375B926CB083100C63152 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410375B826CB083100C63152 /* BookViewModel.swift */; };
 		410375C726CB0AAC00C63152 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410375C526CB0AAC00C63152 /* BookCell.swift */; };
 		410375C826CB0AAC00C63152 /* BookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 410375C626CB0AAC00C63152 /* BookCell.xib */; };
+		410375D626CB69F300C63152 /* MainTabBarAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410375CF26CB69F300C63152 /* MainTabBarAPIDataManager.swift */; };
+		410375D726CB69F300C63152 /* MainTabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410375D026CB69F300C63152 /* MainTabBarPresenter.swift */; };
+		410375D826CB69F300C63152 /* MainTabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410375D126CB69F300C63152 /* MainTabBarRouter.swift */; };
+		410375D926CB69F300C63152 /* MainTabBarContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410375D226CB69F300C63152 /* MainTabBarContracts.swift */; };
+		410375DA26CB69F300C63152 /* MainTabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410375D326CB69F300C63152 /* MainTabBarInteractor.swift */; };
+		410375DB26CB69F300C63152 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410375D426CB69F300C63152 /* MainTabBarViewController.swift */; };
 		4109C9FC26C9852C00A44399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C9FB26C9852C00A44399 /* AppDelegate.swift */; };
 		4109C9FE26C9852C00A44399 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109C9FD26C9852C00A44399 /* SceneDelegate.swift */; };
 		4109CA0526C9853700A44399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4109CA0426C9853700A44399 /* Assets.xcassets */; };
@@ -50,6 +56,24 @@
 		4109CA4B26C9AE5500A44399 /* LibraryChallengeWXConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4109CA4A26C9AE5500A44399 /* LibraryChallengeWXConstant.swift */; };
 		41222B9F26C9B36F00AEFA4F /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41222B9E26C9B36F00AEFA4F /* String+Localized.swift */; };
 		41222BA326C9B3BE00AEFA4F /* LibraryChallengeWXLocalizables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41222BA226C9B3BE00AEFA4F /* LibraryChallengeWXLocalizables.swift */; };
+		4162354026CC8C4D00343FAC /* BookDetailsAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162353926CC8C4D00343FAC /* BookDetailsAPIDataManager.swift */; };
+		4162354126CC8C4D00343FAC /* BookDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162353A26CC8C4D00343FAC /* BookDetailsPresenter.swift */; };
+		4162354226CC8C4D00343FAC /* BookDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162353B26CC8C4D00343FAC /* BookDetailsRouter.swift */; };
+		4162354326CC8C4D00343FAC /* BookDetailsContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162353C26CC8C4D00343FAC /* BookDetailsContracts.swift */; };
+		4162354426CC8C4D00343FAC /* BookDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162353D26CC8C4D00343FAC /* BookDetailsInteractor.swift */; };
+		4162354526CC8C4D00343FAC /* BookDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162353E26CC8C4D00343FAC /* BookDetailsViewController.swift */; };
+		4162354B26CC8C7900343FAC /* BookDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4162354A26CC8C7900343FAC /* BookDetailsViewController.storyboard */; };
+		4162354F26CC9B1200343FAC /* SessionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162354E26CC9B1200343FAC /* SessionHelper.swift */; };
+		4162355226CCA48B00343FAC /* SecondaryButtonWX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162355126CCA48B00343FAC /* SecondaryButtonWX.swift */; };
+		4162356026CCA68800343FAC /* LogoutAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162355926CCA68800343FAC /* LogoutAPIDataManager.swift */; };
+		4162356126CCA68800343FAC /* LogoutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162355A26CCA68800343FAC /* LogoutPresenter.swift */; };
+		4162356226CCA68800343FAC /* LogoutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162355B26CCA68800343FAC /* LogoutRouter.swift */; };
+		4162356326CCA68800343FAC /* LogoutContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162355C26CCA68800343FAC /* LogoutContracts.swift */; };
+		4162356426CCA68800343FAC /* LogoutInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162355D26CCA68800343FAC /* LogoutInteractor.swift */; };
+		4162356526CCA68800343FAC /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162355E26CCA68800343FAC /* LogoutViewController.swift */; };
+		4162356C26CCA6B500343FAC /* LogoutViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4162356B26CCA6B500343FAC /* LogoutViewController.storyboard */; };
+		4162357426CCCC4C00343FAC /* Label+LocalizablesIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162357326CCCC4C00343FAC /* Label+LocalizablesIB.swift */; };
+		4162357726CCD2C400343FAC /* PrimaryNavBarWX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4162357626CCD2C400343FAC /* PrimaryNavBarWX.swift */; };
 		41C970E926C9BBEA00A7DB35 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41C970E826C9BBEA00A7DB35 /* Localizable.strings */; };
 		41C970EE26C9BF0500A7DB35 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 41C970ED26C9BF0500A7DB35 /* IQKeyboardManagerSwift */; };
 		41C970F126C9D1A000A7DB35 /* ValidableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C970F026C9D1A000A7DB35 /* ValidableTextField.swift */; };
@@ -82,6 +106,12 @@
 		410375B826CB083100C63152 /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
 		410375C526CB0AAC00C63152 /* BookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		410375C626CB0AAC00C63152 /* BookCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookCell.xib; sourceTree = "<group>"; };
+		410375CF26CB69F300C63152 /* MainTabBarAPIDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarAPIDataManager.swift; sourceTree = "<group>"; };
+		410375D026CB69F300C63152 /* MainTabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarPresenter.swift; sourceTree = "<group>"; };
+		410375D126CB69F300C63152 /* MainTabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarRouter.swift; sourceTree = "<group>"; };
+		410375D226CB69F300C63152 /* MainTabBarContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarContracts.swift; sourceTree = "<group>"; };
+		410375D326CB69F300C63152 /* MainTabBarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarInteractor.swift; sourceTree = "<group>"; };
+		410375D426CB69F300C63152 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		4109C9F826C9852C00A44399 /* LibraryChallengeWX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibraryChallengeWX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4109C9FB26C9852C00A44399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4109C9FD26C9852C00A44399 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +137,24 @@
 		4109CA4A26C9AE5500A44399 /* LibraryChallengeWXConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryChallengeWXConstant.swift; sourceTree = "<group>"; };
 		41222B9E26C9B36F00AEFA4F /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		41222BA226C9B3BE00AEFA4F /* LibraryChallengeWXLocalizables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryChallengeWXLocalizables.swift; sourceTree = "<group>"; };
+		4162353926CC8C4D00343FAC /* BookDetailsAPIDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsAPIDataManager.swift; sourceTree = "<group>"; };
+		4162353A26CC8C4D00343FAC /* BookDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsPresenter.swift; sourceTree = "<group>"; };
+		4162353B26CC8C4D00343FAC /* BookDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsRouter.swift; sourceTree = "<group>"; };
+		4162353C26CC8C4D00343FAC /* BookDetailsContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsContracts.swift; sourceTree = "<group>"; };
+		4162353D26CC8C4D00343FAC /* BookDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsInteractor.swift; sourceTree = "<group>"; };
+		4162353E26CC8C4D00343FAC /* BookDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsViewController.swift; sourceTree = "<group>"; };
+		4162354A26CC8C7900343FAC /* BookDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookDetailsViewController.storyboard; sourceTree = "<group>"; };
+		4162354E26CC9B1200343FAC /* SessionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHelper.swift; sourceTree = "<group>"; };
+		4162355126CCA48B00343FAC /* SecondaryButtonWX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButtonWX.swift; sourceTree = "<group>"; };
+		4162355926CCA68800343FAC /* LogoutAPIDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutAPIDataManager.swift; sourceTree = "<group>"; };
+		4162355A26CCA68800343FAC /* LogoutPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutPresenter.swift; sourceTree = "<group>"; };
+		4162355B26CCA68800343FAC /* LogoutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutRouter.swift; sourceTree = "<group>"; };
+		4162355C26CCA68800343FAC /* LogoutContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutContracts.swift; sourceTree = "<group>"; };
+		4162355D26CCA68800343FAC /* LogoutInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutInteractor.swift; sourceTree = "<group>"; };
+		4162355E26CCA68800343FAC /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		4162356B26CCA6B500343FAC /* LogoutViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogoutViewController.storyboard; sourceTree = "<group>"; };
+		4162357326CCCC4C00343FAC /* Label+LocalizablesIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+LocalizablesIB.swift"; sourceTree = "<group>"; };
+		4162357626CCD2C400343FAC /* PrimaryNavBarWX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryNavBarWX.swift; sourceTree = "<group>"; };
 		41C970E826C9BBEA00A7DB35 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		41C970F026C9D1A000A7DB35 /* ValidableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidableTextField.swift; sourceTree = "<group>"; };
 		41C970F526C9EB0F00A7DB35 /* CheckBoxWX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxWX.swift; sourceTree = "<group>"; };
@@ -209,6 +257,19 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		410375CE26CB69DB00C63152 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				410375D226CB69F300C63152 /* MainTabBarContracts.swift */,
+				410375CF26CB69F300C63152 /* MainTabBarAPIDataManager.swift */,
+				410375D026CB69F300C63152 /* MainTabBarPresenter.swift */,
+				410375D126CB69F300C63152 /* MainTabBarRouter.swift */,
+				410375D326CB69F300C63152 /* MainTabBarInteractor.swift */,
+				410375D426CB69F300C63152 /* MainTabBarViewController.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
 		4109C9EF26C9852C00A44399 = {
 			isa = PBXGroup;
 			children = (
@@ -228,8 +289,12 @@
 		4109C9FA26C9852C00A44399 /* LibraryChallengeWX */ = {
 			isa = PBXGroup;
 			children = (
+				4162357D26CCD69A00343FAC /* MainWireframe */,
 				4109CA1526C9862200A44399 /* Login */,
+				410375CE26CB69DB00C63152 /* MainTabBar */,
 				4103758326CAF07700C63152 /* BookList */,
+				4162353826CC8C3000343FAC /* BookDetails */,
+				4162355826CCA66F00343FAC /* Logout */,
 				410375A226CAF9BD00C63152 /* GenericErrorCV */,
 				4109CA4926C9AE3300A44399 /* Constant */,
 				4109CA4126C987EF00A44399 /* Model */,
@@ -251,6 +316,8 @@
 				41C970F026C9D1A000A7DB35 /* ValidableTextField.swift */,
 				41C970F526C9EB0F00A7DB35 /* CheckBoxWX.swift */,
 				41C970FC26C9F12900A7DB35 /* PrimaryButtonWX.swift */,
+				4162355126CCA48B00343FAC /* SecondaryButtonWX.swift */,
+				4162357626CCD2C400343FAC /* PrimaryNavBarWX.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -273,6 +340,8 @@
 				4103759926CAF88B00C63152 /* UIViewController+LoadingOverlay.swift */,
 				4103759C26CAF8B400C63152 /* LoadingOverlay.swift */,
 				4103759F26CAF8EA00C63152 /* UIView+AddEmbedded.swift */,
+				4162354E26CC9B1200343FAC /* SessionHelper.swift */,
+				4162357326CCCC4C00343FAC /* Label+LocalizablesIB.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -380,6 +449,41 @@
 			path = Localizables;
 			sourceTree = "<group>";
 		};
+		4162353826CC8C3000343FAC /* BookDetails */ = {
+			isa = PBXGroup;
+			children = (
+				4162353C26CC8C4D00343FAC /* BookDetailsContracts.swift */,
+				4162353A26CC8C4D00343FAC /* BookDetailsPresenter.swift */,
+				4162353D26CC8C4D00343FAC /* BookDetailsInteractor.swift */,
+				4162353926CC8C4D00343FAC /* BookDetailsAPIDataManager.swift */,
+				4162353B26CC8C4D00343FAC /* BookDetailsRouter.swift */,
+				4162353E26CC8C4D00343FAC /* BookDetailsViewController.swift */,
+				4162354A26CC8C7900343FAC /* BookDetailsViewController.storyboard */,
+			);
+			path = BookDetails;
+			sourceTree = "<group>";
+		};
+		4162355826CCA66F00343FAC /* Logout */ = {
+			isa = PBXGroup;
+			children = (
+				4162355C26CCA68800343FAC /* LogoutContracts.swift */,
+				4162355926CCA68800343FAC /* LogoutAPIDataManager.swift */,
+				4162355A26CCA68800343FAC /* LogoutPresenter.swift */,
+				4162355B26CCA68800343FAC /* LogoutRouter.swift */,
+				4162355D26CCA68800343FAC /* LogoutInteractor.swift */,
+				4162355E26CCA68800343FAC /* LogoutViewController.swift */,
+				4162356B26CCA6B500343FAC /* LogoutViewController.storyboard */,
+			);
+			path = Logout;
+			sourceTree = "<group>";
+		};
+		4162357D26CCD69A00343FAC /* MainWireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainWireframe;
+			sourceTree = "<group>";
+		};
 		41C970FF26C9F80300A7DB35 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -458,11 +562,13 @@
 				41C9710426C9F8F500A7DB35 /* Montserrat-Regular.ttf in Resources */,
 				41C9710326C9F8F500A7DB35 /* Montserrat-Bold.ttf in Resources */,
 				4103759626CAF1C800C63152 /* BookListViewController.storyboard in Resources */,
+				4162356C26CCA6B500343FAC /* LogoutViewController.storyboard in Resources */,
 				410375C826CB0AAC00C63152 /* BookCell.xib in Resources */,
 				41C9710526C9F8F500A7DB35 /* montserrat-medium.ttf in Resources */,
 				4109CA2726C9866E00A44399 /* LoginViewController.storyboard in Resources */,
 				41C970E926C9BBEA00A7DB35 /* Localizable.strings in Resources */,
 				410375AF26CAF9BD00C63152 /* GenericErrorViewController.storyboard in Resources */,
+				4162354B26CC8C7900343FAC /* BookDetailsViewController.storyboard in Resources */,
 				4109CA0826C9853700A44399 /* LaunchScreen.storyboard in Resources */,
 				4109CA0526C9853700A44399 /* Assets.xcassets in Resources */,
 			);
@@ -475,18 +581,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4162356426CCA68800343FAC /* LogoutInteractor.swift in Sources */,
 				4109CA3A26C9879700A44399 /* Endpoint.swift in Sources */,
 				4109CA1E26C9864D00A44399 /* LoginPresenter.swift in Sources */,
 				4109CA4B26C9AE5500A44399 /* LibraryChallengeWXConstant.swift in Sources */,
+				4162357426CCCC4C00343FAC /* Label+LocalizablesIB.swift in Sources */,
 				4103758F26CAF0F900C63152 /* BookListInteractor.swift in Sources */,
 				4109CA1D26C9864D00A44399 /* LoginAPIDataManager.swift in Sources */,
 				4109CA2126C9864D00A44399 /* LoginInteractor.swift in Sources */,
 				410375B026CAF9BD00C63152 /* GenericErrorViewController.swift in Sources */,
+				410375D826CB69F300C63152 /* MainTabBarRouter.swift in Sources */,
 				41C970F626C9EB0F00A7DB35 /* CheckBoxWX.swift in Sources */,
 				4103759026CAF0F900C63152 /* BookListViewController.swift in Sources */,
+				4162354F26CC9B1200343FAC /* SessionHelper.swift in Sources */,
+				4162354026CC8C4D00343FAC /* BookDetailsAPIDataManager.swift in Sources */,
 				4103759A26CAF88B00C63152 /* UIViewController+LoadingOverlay.swift in Sources */,
 				4109CA3826C9879700A44399 /* Networking.swift in Sources */,
 				41C9710C26CA1A4300A7DB35 /* Codable+toDictionary.swift in Sources */,
+				410375DA26CB69F300C63152 /* MainTabBarInteractor.swift in Sources */,
 				4109CA3626C9879700A44399 /* BooksResponse.swift in Sources */,
 				4103758B26CAF0F900C63152 /* BookListAPIDataManager.swift in Sources */,
 				4103758E26CAF0F900C63152 /* BookListContracts.swift in Sources */,
@@ -495,26 +607,42 @@
 				4109CA3726C9879700A44399 /* NetworkEnvironment.swift in Sources */,
 				4109C9FC26C9852C00A44399 /* AppDelegate.swift in Sources */,
 				4109CA4526C987EF00A44399 /* User.swift in Sources */,
+				4162356526CCA68800343FAC /* LogoutViewController.swift in Sources */,
 				4109CA1F26C9864D00A44399 /* LoginRouter.swift in Sources */,
+				4162356126CCA68800343FAC /* LogoutPresenter.swift in Sources */,
 				410375B126CAF9BD00C63152 /* GenericErrorProtocols.swift in Sources */,
 				4109C9FE26C9852C00A44399 /* SceneDelegate.swift in Sources */,
 				41222BA326C9B3BE00AEFA4F /* LibraryChallengeWXLocalizables.swift in Sources */,
+				410375D926CB69F300C63152 /* MainTabBarContracts.swift in Sources */,
+				4162356326CCA68800343FAC /* LogoutContracts.swift in Sources */,
 				41C9710926CA15D000A7DB35 /* LoginResponse.swift in Sources */,
+				4162355226CCA48B00343FAC /* SecondaryButtonWX.swift in Sources */,
 				41C970F126C9D1A000A7DB35 /* ValidableTextField.swift in Sources */,
+				4162354426CC8C4D00343FAC /* BookDetailsInteractor.swift in Sources */,
 				4109CA2226C9864D00A44399 /* LoginViewController.swift in Sources */,
+				4162354526CC8C4D00343FAC /* BookDetailsViewController.swift in Sources */,
+				410375D626CB69F300C63152 /* MainTabBarAPIDataManager.swift in Sources */,
 				4103758D26CAF0F900C63152 /* BookListRouter.swift in Sources */,
+				4162356226CCA68800343FAC /* LogoutRouter.swift in Sources */,
 				4109CA3926C9879700A44399 /* APIManager.swift in Sources */,
 				410375B926CB083100C63152 /* BookViewModel.swift in Sources */,
+				4162354126CC8C4D00343FAC /* BookDetailsPresenter.swift in Sources */,
+				410375D726CB69F300C63152 /* MainTabBarPresenter.swift in Sources */,
 				4109CA4626C987EF00A44399 /* Coment.swift in Sources */,
 				4109CA2026C9864D00A44399 /* LoginContracts.swift in Sources */,
 				410375A026CAF8EA00C63152 /* UIView+AddEmbedded.swift in Sources */,
+				4162354326CC8C4D00343FAC /* BookDetailsContracts.swift in Sources */,
 				4103758C26CAF0F900C63152 /* BookListPresenter.swift in Sources */,
 				410375C726CB0AAC00C63152 /* BookCell.swift in Sources */,
+				4162356026CCA68800343FAC /* LogoutAPIDataManager.swift in Sources */,
 				41222B9F26C9B36F00AEFA4F /* String+Localized.swift in Sources */,
+				410375DB26CB69F300C63152 /* MainTabBarViewController.swift in Sources */,
 				4109CA2326C9864D00A44399 /* LoginEntity.swift in Sources */,
 				41C970FD26C9F12A00A7DB35 /* PrimaryButtonWX.swift in Sources */,
 				410375AE26CAF9BD00C63152 /* GenericErrorPresenter.swift in Sources */,
 				4109CA4726C987EF00A44399 /* Book.swift in Sources */,
+				4162357726CCD2C400343FAC /* PrimaryNavBarWX.swift in Sources */,
+				4162354226CC8C4D00343FAC /* BookDetailsRouter.swift in Sources */,
 				410375B326CAF9BD00C63152 /* GenericErrorRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

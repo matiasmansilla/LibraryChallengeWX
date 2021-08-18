@@ -46,7 +46,9 @@
                                         <rect key="frame" x="40" y="157" width="264" height="33"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <state key="normal" title="Ok"/>
+                                        <state key="normal" title="Ok">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="okButtonTapped:" destination="3DW-ZV-4ZO" eventType="touchUpInside" id="enY-j5-7ae"/>
                                         </connections>

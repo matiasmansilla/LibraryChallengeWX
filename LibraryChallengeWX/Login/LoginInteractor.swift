@@ -17,7 +17,8 @@ class LoginInteractor: LoginInteractorProtocol {
     apiDataManager?.login(user: user, completion: { [weak self] (response, error) in
       if let message = response?.message {
         print(message)
-        self?.presenter?.navigateToBookList()
+        SessionHelper.shared.saveSession()
+        self?.presenter?.navigateToMainTabBar()
       } else {
         self?.presenter?.setError(title: LibraryChallengeWXLocalizables().genericTitleNetworkError, message: error?.errorDescription)
       }

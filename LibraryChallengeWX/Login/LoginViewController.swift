@@ -18,8 +18,6 @@ class LoginViewController: UIViewController, LoginViewProtocol {
   @IBOutlet weak var loginButton: PrimaryButtonWX!
   @IBOutlet weak var agreeTermsLabel: UILabel!
   
-  
-  
   // MARK: - Properties
   var presenter: LoginPresenterProtocol?
   let user: User = User()
@@ -32,7 +30,7 @@ class LoginViewController: UIViewController, LoginViewProtocol {
   }
   
   // MARK: - Constants and Localizables
-  let constant: LibraryChallengeWXConstant = LibraryChallengeWXConstant()
+  let constants: LibraryChallengeWXConstant = LibraryChallengeWXConstant()
   let localizables: LibraryChallengeWXLocalizables = LibraryChallengeWXLocalizables()
   
   // MARK: - Initializer
@@ -61,42 +59,39 @@ class LoginViewController: UIViewController, LoginViewProtocol {
     let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
     self.view.addGestureRecognizer(tapGesture)
     
-    
-    
-    
-    
-    
-    //  TODO TEMP QUIT QUIT QUIT
-    presenter?.navigateToBookList()
-    
-    
-    
-    
-    
   }
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
+    setupNavBar()
     setupUI()
   }
   
+  private func setupNavBar() {
+    let image = UIImage(named: "bc_nav bar")?.resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0), resizingMode: .stretch)
+    self.navigationController?.navigationBar.shadowImage = UIImage()
+    self.navigationController?.navigationBar.setBackgroundImage(image, for: .default)
+    self.navigationController?.navigationBar.barStyle = .black
+    self.navigationController?.navigationBar.tintColor = .white
+    self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+  }
+  
   private func setupUI() {
-    
     loginButton.isEnabled = false
     
-    datePicker = UIDatePicker.init(frame: CGRect(x: 0, y: 0, width: dateTextField.frame.size.width, height: 200))
+    datePicker = UIDatePicker.init(frame: CGRect(x: 0, y: 0, width: dateTextField.frame.size.width, height: constants.heightDatePicker))
     datePicker?.datePickerMode = .date
     datePicker?.preferredDatePickerStyle = .wheels
     datePicker?.addTarget(self, action: #selector(self.dateChanged), for: .allEvents)
     dateTextField.inputView = datePicker
-    let doneButton = UIBarButtonItem.init(title: "Done", style: .done, target: self, action: #selector(self.datePickerDone))
-    let toolBar = UIToolbar.init(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 44))
+    let doneButton = UIBarButtonItem.init(title: localizables.donebuttonTitle, style: .done, target: self, action: #selector(self.datePickerDone))
+    let toolBar = UIToolbar.init(frame: CGRect(x: 0, y: 0, width: view.bounds.size.width, height: constants.heightToolbarDatePicker))
     toolBar.setItems([UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil), doneButton], animated: true)
     dateTextField.inputAccessoryView = toolBar
     
     self.title = localizables.loginTitle
     
-    view.backgroundColor = constant.bgMainScreenColor
+    view.backgroundColor = constants.bgMainScreenColor
     
     nameTextField.placeholder = localizables.loginNamePlaceholder
     lastNameTextField.placeholder = localizables.loginLastNamePlaceholder

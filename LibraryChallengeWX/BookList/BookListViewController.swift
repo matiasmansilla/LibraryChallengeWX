@@ -46,6 +46,16 @@ class BookListViewController: UIViewController {
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     setupUI()
+    setupNavBar()
+  }
+  
+  private func setupNavBar() {
+    let image = UIImage(named: "bc_nav bar")?.resizableImage(withCapInsets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0), resizingMode: .stretch)
+    self.navigationController?.navigationBar.shadowImage = UIImage()
+    self.navigationController?.navigationBar.setBackgroundImage(image, for: .default)
+    self.navigationController?.navigationBar.barStyle = .black
+    self.navigationController?.navigationBar.tintColor = .white
+    self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
   }
   
   private func setupTableView() {
@@ -64,7 +74,6 @@ class BookListViewController: UIViewController {
     
     self.view.backgroundColor = constant.bgMainScreenColor
     navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-    self.title = "Library"
     
     let leftBarButton = UIButton()
     leftBarButton.setImage(#imageLiteral(resourceName: "ic_notifications"), for: .normal)
@@ -138,5 +147,8 @@ extension BookListViewController: UITableViewDelegate, UITableViewDataSource {
     
   }
   
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    BookDetailsRouter().navigateToBookDetails(from: self)
+  }
   
 }

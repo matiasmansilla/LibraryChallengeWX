@@ -10,7 +10,12 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
   var window: UIWindow?
-
+  
+  func setRootViewController(_ vc: UIViewController) {
+    if let window = self.window {
+      window.rootViewController = vc
+    }
+  }
 
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -19,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     guard let windowScene = (scene as? UIWindowScene) else { return }
     window?.windowScene = windowScene
     window?.makeKeyAndVisible()
-    LoginRouter().goToLogin(window: window)
+    LoginRouter().goToInitialView()
   }
 
   func sceneDidDisconnect(_ scene: UIScene) {

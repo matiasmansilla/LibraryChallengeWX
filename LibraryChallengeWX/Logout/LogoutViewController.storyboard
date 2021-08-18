@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="montserrat-medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Logout View Controller-->
+        <scene sceneID="AbP-kB-MHh">
+            <objects>
+                <viewController storyboardIdentifier="LogoutViewController" id="Wqm-Os-wf9" customClass="LogoutViewController" customModule="LibraryChallengeWX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tUm-oc-mRY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhP-5O-puX">
+                                <rect key="frame" x="20" y="184" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxl-PL-vog" customClass="SecondaryButtonWX" customModule="LibraryChallengeWX" customModuleProvider="target">
+                                <rect key="frame" x="40" y="405" width="334" height="34"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" name="light_blue_wx"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButtonAction:" destination="Wqm-Os-wf9" eventType="touchUpInside" id="vVE-nO-xA3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EBS-Xg-YnW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Mxl-PL-vog" firstAttribute="leading" secondItem="EBS-Xg-YnW" secondAttribute="leading" constant="40" id="1du-el-eWf"/>
+                            <constraint firstItem="HhP-5O-puX" firstAttribute="top" secondItem="EBS-Xg-YnW" secondAttribute="top" constant="140" id="EOo-de-Amt"/>
+                            <constraint firstItem="HhP-5O-puX" firstAttribute="leading" secondItem="EBS-Xg-YnW" secondAttribute="leading" constant="20" id="KKq-CR-lLt"/>
+                            <constraint firstItem="Mxl-PL-vog" firstAttribute="top" secondItem="HhP-5O-puX" secondAttribute="bottom" constant="200" id="Yql-i9-z6t"/>
+                            <constraint firstItem="EBS-Xg-YnW" firstAttribute="trailing" secondItem="Mxl-PL-vog" secondAttribute="trailing" constant="40" id="aZV-YA-svy"/>
+                            <constraint firstItem="EBS-Xg-YnW" firstAttribute="trailing" secondItem="HhP-5O-puX" secondAttribute="trailing" constant="20" id="hpx-1a-Lxw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="06S-6a-Com" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="124"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Mxl-PL-vog">
+            <size key="intrinsicContentSize" width="64" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="light_blue_wx">
+            <color red="0.30199998617172241" green="0.66699999570846558" blue="0.9100000262260437" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

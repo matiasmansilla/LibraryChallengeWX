@@ -20,7 +20,7 @@ class LoginPresenter: LoginPresenterProtocol {
     router?.presentError(from: view, with: title, message: message)
   }
   
-  func navigateToBookList() {
-    router?.goToBookList(from: view)
+  func navigateToMainTabBar() {
+    router?.goToMainTab()
   }
 }

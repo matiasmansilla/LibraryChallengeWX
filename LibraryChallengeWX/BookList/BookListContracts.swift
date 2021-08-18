@@ -30,6 +30,7 @@ protocol BookListInteractorProtocol: class {
 }
 // MARK: - Router Protocol
 protocol BookListRouterProtocol: class {
+  func instantiate() -> BookListViewController
   func goToBookList(from context: AnyObject?)
   func navigateToBookDetail(with book: Book, from context: AnyObject?)
   func presentError(from context: AnyObject?, title: String?, message: String?)
